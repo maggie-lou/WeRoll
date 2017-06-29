@@ -6,7 +6,7 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background: url('../img/brick.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -78,18 +78,28 @@ hr {
 }
 
 .box {
-    width: 100%;
+    width: 55%;
+    margin-top: 7%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    padding: 30px 15px;
+    padding: 25px 15px;
     background: #fff;
     background: rgba(255,255,255,0.9);
 }
 
+#whyus-row {
+    width:78%; 
+    margin-right:auto; 
+    margin-left:auto;
+}
+
 #whyus {
+    height:30%;
     width: 26.6%;
     margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     display: inline-block;
 }
 
@@ -116,14 +126,25 @@ hr {
     top: 40%;
 }
 
+
 footer {
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    /* ensure footer width = width of browser window */ 
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* footer extends to bottom of browser screen */
+    box-shadow: 0px 500px 0px 500px rgba(255,255,255,0.9);
+    margin-top: 4%;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 footer p {
     margin: 0;
-    padding: 50px 0;
+    padding-top: 20px;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: large;
+    text-transform: none;
+    color:#777;
 }
 
 @media screen and (min-width:768px) {
@@ -134,10 +155,11 @@ footer p {
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 5em;
+        font-size: 3.8em;
         font-weight: 700;
         line-height: normal;
         color: #fff;
+        text-shadow: -1px 0 1px black, 0 1px black, 1px 0 6px black, 0 -1px black;
     }
 
     .top-divider {
@@ -164,6 +186,7 @@ footer p {
 
     .navbar {
         border-radius: 0;
+        height:7%;
     }
 
     .navbar-header {
@@ -175,6 +198,9 @@ footer p {
     }
 
     .navbar-default {
+        position: absolute;
+        left: 0;
+        right: 0;
         border: none;
         background: #fff;
         background: rgba(255,255,255,0.9);
@@ -189,11 +215,13 @@ footer p {
     }
 
     .navbar-nav {
+        position: relative;
+        bottom:15px;
         display: table;
         float: none;
         margin: 0 auto;
         table-layout: fixed;
-        font-size: 1.25em;
+        font-size: 1em;
     }
 }
 

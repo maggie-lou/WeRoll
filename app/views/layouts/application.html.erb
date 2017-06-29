@@ -3,7 +3,7 @@
      	<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	        <title>Bootstrap4</title>
+	        <title>Cyclical</title>
 	        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	        <%= csrf_meta_tags %>
     </head>
@@ -12,6 +12,16 @@
         <div class="container">
             <%= yield %>
         </div>
+
+    <footer>
+        <div class="container">
+            <div class="row" style="padding: 30px">
+                <div class="col-lg-12 text-center">
+                    <p>contact us: cyclical@u.northwestern.edu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
 </html>
